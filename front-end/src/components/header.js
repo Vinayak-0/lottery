@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, Link } from "react-router-dom";
+import { Navigate } from 'react-router-dom';
 
 const Header = () => {
-  return <div className='mynavbar'>
+const logout = ()=>{
+  localStorage.clear();
+}
+
+return <div className='mynavbar'>
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Lottery</a>
@@ -13,13 +18,6 @@ const Header = () => {
       <ul className="navbar-nav">
       <li className="nav-item">
       <Link className="nav-link active" to="/">Home</Link></li>
-    <li className="nav-item">
-      <Link className="nav-link active" to="/login">Login</Link></li>
-    <li className="nav-item">
-      <Link className="nav-link active" to="/register">Register</Link></li>
-        <li className="nav-item">
-          <a className="nav-link">Join</a>
-        </li>
       </ul>
   
     </div>

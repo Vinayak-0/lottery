@@ -17,18 +17,20 @@
 }
 .home {
   background-color: rgb(49, 49, 49);
-  padding-left: 10%;
+  padding: 10% 15%;
+  /* padding-left: 10%; */
   height: 100vh;
+  /* margin: auto; */
   position: fixed;
   /* display: flex; */
-  
+  /* text-align: center; */
   width: 100vw;
   /* margin-t; */
 }
 .homeintro{
   display: flex;
   align-items: flex-end;
-  height: 30vh;
+  height: 10vh;
   color: wheat;
   margin: auto;
   font-size: 40px;
@@ -36,12 +38,12 @@
 .homeintrosub{
   display: flex;
   color: wheat;
-  height: 10vh;
+  height:10vh;
 }
 .homebutton{
   padding: 0;
   display: flex;
-  height: 30vh;
+  height: 10vh;
   align-items: center;
   justify-content:start;
 }
@@ -145,26 +147,144 @@
     transition: filter .25s ease;
 }
 
+/* .lottery{
+  margin: 5% auto;
+} */
 
 .csvInput{
   display:none;
 }
 
 .uploadButton{
+
+  margin:  5% auto;
   padding: 10px;
+  font-size: 40px;
   color:antiquewhite;
   background-color: gray;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .startLottery{
+  /* align-items: center; */
   display: none;
+  margin: 5% auto;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: rgb(129, 114, 114);
 }
 .remaining-name-collection{
   display: none;
 }
 .rollButton{
+  border-radius: 10px;
   display: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: auto;
+}
+.Rname{
+  border-radius: 20px;
+  text-align: center;
+  margin: 50px auto;
+  color :antiquewhite;
+font-size: 3rem;
+font-weight: bolder;
+padding: 20px;
+background-color: grey;
 }
 .namelist{
+  margin:auto;
   display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.done{
+  color :antiquewhite;
+font-size: 3rem;
+padding: 20px;
+text-align: center;
+}
+
+.remaining{
+  color :antiquewhite;
+font-size: 3rem;
+padding: 20px;
+}
+.completeList{
+  color: antiquewhite;
+  font-size: 2.5rem;
+  padding: 10px;
+  list-style-type: none;
+} 
+
+.remaininglist{
+  margin-left: 50px;
+  color: antiquewhite;
+  font-size: 2.5rem;
+  /* padding: 15px 10px; */
+  list-style-type: none;
+}
+.lottery-page{
+  display:none;
+
+}
+.lottery-card{
+  width: 80%!important;
+  max-width: 1500px;
+  min-width: 800px;
+}
+
+.done-list{
+  /* height: 40%; */
+  margin: 20px;
+  border: 5px solid black;
+  overflow: scroll;  width: 50%;
+  overflow-x: hidden;min-height: 600px;max-height: 600px;
+}
+.remaining-list{
+  /* height: 40%; */
+  width: 50%;  margin: 20px;
+  border: 5px solid black;
+  overflow: scroll;
+  overflow-x: hidden;
+  min-height: 600px;
+  max-height: 600px;
+}
+
+.login-page{
+  padding: 20% 25%;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+}
+.login{
+  color: rgb(49, 49, 49);
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 20px 0px;
+}
+.login-card{
+  background-color: thistle;
+  padding: 20% 25%;
+  border-radius: 40px;
+}
+
+.loginform{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputbox{
+  margin: 10px;
+  padding:15px;  
+  border-radius: 10px;
+}
+.inputbutton{
+  margin: 10px;
+  padding:15px;  
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
 }

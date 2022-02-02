@@ -8,7 +8,7 @@ import { BrowserRouter, Routes,
 import LotteryCreate from "./components/lottery-create"
 import Header from './components/header';
 import Footer from './components/footer';
-import Login from './components/login';
+import Home from './components/home';
 import Register from './components/register';
 
 
@@ -18,10 +18,11 @@ ReactDOM.render(
   <BrowserRouter>
   <Header />
     <Routes>
-      <Route path="login" element={<Login />} />
+      <Route path="/" element={<App />} />
+      <Route path="/home" element={<Home />} />
       <Route path="create-lottery" element={<LotteryCreate />} />
       <Route path="register" element={<Register />} />
-      <Route path="" element={<App />} />
+      
     </Routes>
 
   </BrowserRouter>
